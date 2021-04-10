@@ -1,0 +1,104 @@
+@import url("https://fonts.googleapis.com/css2?family=Nanum+Gothic+Coding&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  overflow-x: visible;
+}
+body {
+  font-family: "Nanum Gothic Coding", monospace;
+  background: linear-gradient(to right, #a1c4fd, #c2e9fb);
+}
+.box {
+  height: 50px;
+  width: 50px;
+  text-align: center;
+  border-radius: 6px;
+  cursor: pointer;
+}
+.table {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.head {
+  text-align: center;
+  font-size: 37px;
+  color: #fff;
+  font-weight: bold;
+  padding: 10px 0;
+  background-color: #044bbd;
+}
+h4 {
+  font-size: 15px;
+  margin-bottom: 5px;
+}
+p {
+  font-size: 14px;
+}
+.bg-light-blue {
+  background-color: rgba(3, 148, 252, 0.7);
+}
+.bg-light-green {
+  background-color: rgba(37, 235, 189, 0.9);
+}
+.bg-light-pink {
+  background-color: rgba(252, 3, 127, 0.7);
+}
+.bg-light {
+  background-color: rgba(255, 255, 255, 0.6);
+}
+.bg-light-grey {
+  background-color: rgba(51, 76, 94, 0.3);
+}
+.bg-dark-blue {
+  background-color: rgba(60, 70, 214, 0.9);
+}
+.bg-light-red {
+  background-color: rgba(255, 27, 27, 0.9);
+}
+.bg-light-yellow {
+  background-color: rgba(232, 232, 86, 0.9);
+}
+.bg-light-brown {
+  background-color: rgba(230, 166, 57, 0.8);
+}
+
+.box:hover {
+  width: 60px;
+  height: 60px;
+  position: absolute;
+  margin-top: -5px;
+  padding-top: 10px;
+  font-weight: bold;
+  margin-left: -5px;
+  box-shadow: 0 0 10px #000000;
+  transition: ease 0.3s;
+}
+
+@keyframes slideInFromTop {
+  from {
+    transform: translateY(-1000%);
+  }
+  to {
+    transform: translateY(0);
+  }
+}
+.row {
+  animation: 0.7s ease-out 0s 1 slideInFromTop;
+  animation-delay: calc(var(--order) * 60ms);
+}
+@keyframes slideInFromLeft {
+  from {
+    transform: translateY(-1000%);
+  }
+  to {
+    transform: translateY(0);
+  }
+}
+.head {
+  animation: 1.3s ease-out 0s 1 slideInFromLeft;
+}
