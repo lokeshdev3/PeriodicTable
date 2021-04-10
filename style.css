@@ -102,3 +102,16 @@ p {
 .head {
   animation: 1.3s ease-out 0s 1 slideInFromLeft;
 }
+
+@media all and (max-width: 678px) {
+    h4 {
+        font-size: 9px;
+    }
+    p {
+        font-size: 9px;
+    }
+    .box {
+        height: 40px;
+        width: 40px;
+    }
+}
